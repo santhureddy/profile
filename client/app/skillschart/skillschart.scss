@@ -1,0 +1,36 @@
+.chart {
+     
+    position: relative;
+    width: 95%;
+    height: 210px;
+}
+
+.chart div {
+  width: 0;
+  transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+   font: 10px sans-serif;
+}
+ 
+.chart div.bars {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 5px;
+  margin: 8px;
+  position:relative;
+  left:40px;
+  color: white;
+  box-shadow: 2px 2px 2px #666;
+}
+
+.chart div.names{
+  color: #ef4836;
+  font-weight: 500;
+  margin: 10px;
+  position: relative;
+  top: -209px;
+  right: 15px;
+  padding: 1px;
+}

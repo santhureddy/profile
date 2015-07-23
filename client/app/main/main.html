@@ -1,0 +1,172 @@
+
+<div class="  homeView" ng-controller="MainCtrl">
+    
+<div class="crslCntr" carousel interval="3000">
+      <div slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin: auto;">
+        <div class="carousel-caption">
+          <p class="sliderText">{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+
+<div class="container abtMesectn">
+        <div class="aboutMe">
+          <div class="circleShape">
+            <div class="innerIcon">
+              <i class="fa fa-user"></i>
+            </div>
+          </div>
+          </div>
+
+          <h3>ABOUT ME</h3>
+          <div class="myPic">
+            <img src="../assets/images/myPic.jpg">
+            <h4>  UI Developer, India! </h4>
+            <div class="shortDesc">Integer a lacus at sem suscipit euismod a eu elit. Donec dapibus mauris nec sapien convallis venenatis. Nullam sagittis feugiat sapien ut suscipit. Nullam tristique sodales ipsum, in blandit massa. Morbi sollicitudin lorem est, sed iaculis tortor luctus eget. 
+            </div>
+          </div>
+         
+
+         <div class="mySkills">
+          <div class="circleShape">
+            <div class="innerIcon">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+          </div>
+
+          <h3>MY SKILLS</h3>
+
+          <div class="skillsDesc"> 
+
+<skillbars data="95,90,75,85,65, 70, 95" names="html, css, javascript, jquery, angular, require js, designing" > </skillbars>
+
+ 
+          
+            </div>
+
+
+   <div class="mySkills">
+          <div class="circleShape">
+            <div class="innerIcon">
+              <i class="fa fa-tasks"></i>
+            </div>
+          </div>
+          </div>
+
+            <h3>WHAT I DO</h3>
+ 
+          <div class="skillsDesc"> 
+            <acccontainer>
+              <accitems title="UI Development">
+                <div>
+                  <ul class="iDoList">
+                    <li><img src="../assets/images/uidev_thumb.jpg"></li>
+                  </ul>
+                </div>
+              </accitems>
+              <accitems title="Responsive Web Development">
+             <div>
+                  <ul class="iDoList">
+                    <li><img src="../assets/images/uidev_thumb.jpg"></li>
+                  </ul>
+                </div>
+              </accitems>
+              <accitems title="PHP/MYSQL Projects">
+             <div>
+                  <ul class="iDoList">
+                    <li><img src="../assets/images/uidev_thumb.jpg"></li>
+                  </ul>
+                </div>
+              </accitems>
+              <accitems title="Visual Designing">
+             <div>
+                  <ul class="iDoList">
+                    <li><img src="../assets/images/uidev_thumb.jpg"></li>
+                  </ul>
+                </div>
+              </accitems>
+              <accitems title="Search Engine Optimization">
+             <div>
+                  <ul class="iDoList">
+                    <li><img src="../assets/images/uidev_thumb.jpg"></li>
+                  </ul>
+                </div>
+              </accitems>
+            </acccontainer>
+          </div>
+
+   <div class="mySkills">
+          <div class="circleShape">
+            <div class="innerIcon">
+              <i class="fa fa-external-link-square"></i>
+            </div>
+          </div>
+          </div>
+            <h3>MY FEATURED PROJECTS</h3>
+
+
+<div class="row">
+          <div class="col-md-12">
+            <h4>Selector-Based Filter</h4>
+            <div class="btn-group" opt-kind ok-key="filter" >
+              <button type='button' class='btn btn-default active' ok-sel="*">Show All</button>
+              <button type='button' class='btn btn-default' ok-sel=".purple">Purple</button>
+              <button type='button' class='btn btn-default' ok-sel=".orange">Orange</button>
+              <button type='button' class='btn btn-default' ok-sel=".blue">Blue</button>
+              <button type='button' class='btn btn-default' ok-sel=".green">Green</button>
+              <button type='button' class='btn btn-default' ok-sel=":not(.blue)">Not Blue</button>
+              <button type='button' class='btn btn-default' ok-sel="#extra">Extra Only</button>
+            </div>
+          </div>
+        </div>
+
+          <div class="skillsDesc"> 
+          <ul isotope-container="isotope-container">
+    <li ng-repeat="x in xList" isotope-item="isotope-item" onclick="removeItem(this)">
+        <div class="symbol">{{x.name}}</div>
+        <div class="weight" date="{{x.date}}">{{x.date|date}}</div>
+        <div class="number" number="{{x.number}}">{{x.number}}</div>
+    </li>
+
+    <li id="extra" isotope-item="" class="kindling green">
+       <div class="symbol">extra</div>
+       <div class="weight" date="1360313309421">{{'1360313309421' | date}}</div>
+       <div class="number" number="20">Twenty</div>
+    </li>
+</ul>
+          </div>
+          <div class="container"></div>
+      </div>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-botom" role="navigation">
+      <div class="container">
+         ssdsd
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header  id="banner">
+  <div class="container">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
+    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
